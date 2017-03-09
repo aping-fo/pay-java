@@ -55,7 +55,7 @@ public class Utils{
     public static void printStackTrace(PrintStream ps){
         StackTraceElement[] trace = Thread.currentThread().getStackTrace();
         for (int i = 0; i < trace.length; i++)
-            ps.println("\tat  " + trace[i]);
+            ps.println("\tat  ->" + trace[i]);
     }
 
     public static void printStackTraceToError(Logger logger){
